@@ -265,7 +265,7 @@ function nextQuestion(){
 			isQuestionValid = true;
 		}
 		index++;
-		if(index = 20){
+		if(index == 100){
 			isQuestionValid = true;
 		}
 	}
