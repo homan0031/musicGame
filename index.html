@@ -2,18 +2,129 @@
 <html>
 <head>
 	<title>Page Title</title>
-
+	<meta charset="UTF-8">
 	<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="./js/tether.min.js"></script>
 	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/lodash.js"></script>
 	<script type="text/javascript" src="./js/question.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/question.css">
 </head>
 <body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">Skip: </div>
+			<div class="col-md-3">
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input questionType" type="checkbox" id="inlineCheckbox1" value="0">
+				  <label class="form-check-label" for="inlineCheckbox1">Sharp(#)</label>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input questionType" type="checkbox" id="inlineCheckbox2" value="1">
+				  <label class="form-check-label" for="inlineCheckbox2">Flat(b)</label>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input questionType" type="checkbox" id="inlineCheckbox3" value="2">
+				  <label class="form-check-label" for="inlineCheckbox3">Sharp and Flat Details</label>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		  <div class="col">
+	  		<div>Question <span id="qNum">1</span></div>
+	  		<div id="result"></div>
+		  </div>
+		</div>
+	</div>
+	<div class="container" id="T1">
+	  <div class="row">
+		  <div class="col">
+	  		<div id="question" class="question text-center"></div>
+		  </div>
+		</div>
+		<div class="row ans_row">
+		  <div class="col-md-6 col-sm-12">
+	  		<div class="btn btn-info ans"></div>
+		  </div>
+		  <div class="col-md-6 col-sm-12">
+	  		<div class="btn btn-info ans"></div>
+		  </div>
+		</div>
+		<div class="row ans_row">
+		  <div class="col-md-6 col-sm-12">
+	  		<div class="btn btn-info ans"></div>
+		  </div>
+		  <div class="col-md-6 col-sm-12">
+	  		<div class="btn btn-info ans"></div>
+		  </div>
+		</div>
+	</div>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-
+	<!-- CheckBox Question -->
+	<div class="container" id="T2">
+	  <div class="row">
+		  <div class="col">
+	  		<div id="question" class="question text-center"></div>
+		  </div>
+		</div>
+		<div class="row ans_row">
+		  <div class="col-md-6 col-sm-12">
+	  		<div class="btn btn-warning ans div-checkbox">
+	  			<input type="checkbox" value="" />
+	  		</div>
+		  </div>
+		  <div class="col-md-6 col-sm-12">
+	  		<div class="btn btn-warning ans div-checkbox">
+	  			<input type="checkbox" value="" />
+	  		</div>
+		  </div>
+		</div>
+		<div class="row ans_row">
+		  <div class="col-md-6 col-sm-12">
+	  		<div class="btn btn-warning ans div-checkbox">
+	  			<input type="checkbox" value="" />
+	  		</div>
+		  </div>
+		  <div class="col-md-6 col-sm-12">
+	  		<div class="btn btn-warning ans div-checkbox">
+	  			<input type="checkbox" value="" />
+	  		</div>
+		  </div>
+		</div>
+		<div class="row ans_row">
+		  <div class="col-md-6 col-sm-12">
+	  		<div class="btn btn-warning ans div-checkbox">
+	  			<input type="checkbox" value="" />
+	  		</div>
+		  </div>
+		  <div class="col-md-6 col-sm-12">
+	  		<div class="btn btn-warning ans div-checkbox">
+	  			<input type="checkbox" value="" />
+	  		</div>
+		  </div>
+		</div>
+		<div class="row ans_row">
+		  <div class="col-md-6 col-sm-12">
+	  		<div class="btn btn-warning ans div-checkbox">
+	  			<input type="checkbox" value="" />
+	  		</div>
+		  </div>
+		  <div class="col-md-6 col-sm-12">
+	  		<div class="btn btn-warning ans div-checkbox" id="allFalse">
+	  			<input type="checkbox" value="" />
+	  		</div>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col align-self-center">
+	  		<div class="btn btn-primary" id="btn_confirm">Confirm</div>
+		  </div>
+		</div>
+	</div>
 </body>
-</html>
